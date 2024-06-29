@@ -11,12 +11,14 @@ const fs=require("fs")
 // console.log(result)
 
 //async
-fs.readFile("./contacts.txt", "utf-8",(err,result)=>{
-    if(err)
-        {
-            console.log("error found")
-        }
-        else{
-            console.log(result)
-        }
-})
+// fs.readFile("./contacts.txt", "utf-8",(err,result)=>{
+//     if(err)
+//         {
+//             console.log("error found")
+//         }
+//         else{
+//             console.log(result)
+//         }
+// })
+
+fs.appendFileSync("./test.txt",new Date().getDate().toLocaleString())
